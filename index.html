@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chat Room</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     <script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script> 
+		<script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js" integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ==" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+  </head>
+<body>
+	
+	<div class="dialog">
+			<form class="inputNameChange" autocomplete="off">
+					<input type="text" class="input inputSmall" name="name" maxlength="32" placeholder="Enter your name" >
+					<input type="submit" value="Change" class="btn btn_box">
+			</form>
+	</div>
+	<div class="dialog">
+		<form class="inputClearChat">
+				<input type="text" class="input inputSmall" name="vc" placeholder="Enter Password..." >
+				<input type="submit" value="Erase" class="btn btn_box">
+		</form>
+	</div>
+	<div class="dialog about">
+			<h2>AlanD20-LiveChat</h2>
+			<span>Authentication process handled on Firebase platform by Google inc.</span>
+			<span>Please be advised that Admins don't see your password.</span>
+	</div>
+	<div class="dialog manageProfile accountManaging"></div>
+	<div class="channelWrap">
+		<h2 class="title t2">Channels</h2>
+		<ul class="list channel-list">
+			
+		</ul>	
+		<div class="socials">
+				<span class="twitter"><a href="https://twitter.com/AlanD_2011">Twitter</a></span>
+				<span class="git"><a href="https://github.com/AlanD20">Github</a></span>
+				<span class="pf"><a href="https://aland20.github.io/">Personal Portfolio</a></span>
+				<span class="help"><a href="#help">Security Concern</a></span>
+			</div>
+	</div>
+      
+	<div class="messageWrap">
+
+		<div class="header">
+			<h2>AlanD20's Chat room</h2>
+			
+			<div class="userLogin">
+				
+				<div class="usernameContainer btn_userChangeName"></div>
+				
+				<div  class="manageChat"></div>	
+			
+			</div>
+			
+			<div class="btn_menu"></div>
+		</div>
+			<div class="notification"></div>
+		<span class="noti"></span>
+
+		<div class="interfaceMessage">
+
+			<div class="messageInterface"></div>
+
+			<div class="signinInterface"></div>
+	
+		</div>
+		
+
+	</div>
+
+</body>
+</html>
