@@ -94,7 +94,9 @@ class chat {
 					if (item.type === "removed"){
 						notifi("A message has been removed", 1500)
 						this.removeItems(item.doc);
-						return location.reload();
+						setTimeout(_=>{
+							location.reload();
+						},2000);
 					}
 					else if (item.type === "added"){
 						notifi("New Message", 1000)
@@ -108,7 +110,9 @@ class chat {
 				if (item.type === "removed"){
 					notifi("A message has been removed", 1500)
 					this.removeItems(item.doc);
-					return location.reload();
+					setTimeout(_=>{
+							location.reload();
+					},2000);
 				}
 				else if (item.type === "added"){
 					notifi("New Message", 1000)
