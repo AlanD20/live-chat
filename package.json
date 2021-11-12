@@ -1,0 +1,29 @@
+{
+  "name": "livechat",
+  "version": "1.0.0",
+  "description": "A simple chat room that allows users to communicate with each other.\r Feel free to try out my project. I would appreciate feedbacks.",
+  "main": "index.js",
+  "scripts":{
+    "dev":"npm run development",
+    "development":"mix",
+    "watch":"mix watch",
+    "watch-poll":"mix watch -- --watch-options-poll=1000",
+    "hot":"mix watch --hot",
+    "prod":"npm run production",
+    "production":"mix --production"
+ },
+ 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanD20/LiveChat.git"
+  },
+  "author": "AlanD20",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanD20/LiveChat/issues"
+  },
+  "homepage": "https://github.com/AlanD20/LiveChat#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.39"
+  }
+}
