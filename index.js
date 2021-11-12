@@ -202,7 +202,7 @@ class auth{
 	usernameUpdate(newName){
 		 this.auth.currentUser.updateProfile({displayName: newName}).then(dt=>notifi(`Username updated to ${this.auth.currentUser.displayName}.`, 5000));
 		 newChat.name = this.auth.currentUser.displayName;
-		 return location.reload();
+		 setTimeout(_=>{location.reload();},2000);
 	}
 	emailVerification(e){
 		if(this.auth.currentUser.emailVerified)
@@ -378,7 +378,7 @@ class auth{
 					this.deleteUser(this.auth.currentUser.email);
 					manageProfile.style.display = "none";
 					notifi("Account deleted successfully.");
-					location.reload();
+					setTimeout(_=>{location.reload();},2000);
 				});
 				noDelete.addEventListener('click',e=>{
 					e.preventDefault();
